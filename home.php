@@ -1,4 +1,5 @@
 <?php
+//
 //include the file with our db records.
 include 'tracking.php';
 //
@@ -14,6 +15,7 @@ $tracking = new tracking_assignment();
         <script src="../services_ui/classes.js"></script>
         <script src="../metavisuo/sql_library.php"></script>
         
+      
         <style>
             .button{
                 background-color: #33ff00;
@@ -27,12 +29,14 @@ $tracking = new tracking_assignment();
             }
         </style>
     <script>
+        //
+        //enter database credentials.
         credentials = {
             name: "tracking_assignment",
             username: "root",
             password: ""
         };
-
+        
         function register(){
 
             leader = new service_entity('leader', []);

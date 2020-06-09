@@ -1,6 +1,6 @@
 <?php
 include 'tracking.php';
-include '../metavisuo/sql_library.php';
+include '../metavisuo/v1.0/sql_library.php';
 $tracking = new tracking_assignment();
 $sql = new sql\editor('developer', 'tracking_assignment');
 ?>
@@ -8,10 +8,11 @@ $sql = new sql\editor('developer', 'tracking_assignment');
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link rel="stylesheet" href="developer.css">
     </head>
     <body>
         <?php
-        $tracking->show_developer();
+        $sql->show('tracking_assignment');
         ?>
     </body>
 </html>
