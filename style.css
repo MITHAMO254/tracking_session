@@ -3,9 +3,9 @@
 display: grid;
 width: 100%;
 height: 100vh;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 60% 20% ;
   grid-gap: 10px;
-  grid-auto-rows: 15% 60% 20% ;
+  grid-auto-rows: 15% 60%  20% ;
 }
 
 .one {
@@ -63,8 +63,16 @@ grid-column: 2 / 3;
 }
 
 .five {
-grid-column: 3 / 4;
+/*grid-area: 1/1/span1/span;*/
+grid-column: 2 / 4;
   grid-row: 2 / 3;
   background-color: aqua;
+  display :inline-block;
+}
+.five_b {
+ grid-column: 1/2;
+    height: 70px;
+    padding: 10px;
+    margin: 0;   
 }
 

@@ -1,6 +1,6 @@
 <?php
 include 'tracking.php';
-include '../metavisuo/v1.0/sql_library.php';
+include '../metavisuo/v2.0/sql_library.php';
 $tracking = new tracking_assignment();
 $sql = new sql\editor('developer', 'tracking_assignment');
 ?>

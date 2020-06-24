@@ -4,7 +4,7 @@
 include './config.php';
 //
 //include the file that has the database connection that extends PDO.
-include '../metavisuo/v1.0/library.php';
+include '../metavisuo/v2.0/library.php';
 //
 //
 class tracking_assignment extends database{
@@ -14,7 +14,7 @@ class tracking_assignment extends database{
     public $assignment=[];
     public $application=[];
     public $developer=[];
-    public function __construct() {
+    function __construct() {
         //
         //set up a connection between php file and database it connects.
         $this->assignment = [];

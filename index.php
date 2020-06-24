@@ -22,8 +22,7 @@ try{
     //
     //Include the library libray where the mutall class is defined. (This will
     //throw a warning only which is not trapped. Avoid requre. Its fatal!
-    include '../metavisuo/library.php';
-    include '../save_function/page_processor.php';
+   include '../metavisuo/v2.0/library.php'; 
     //
     //Run the requested method an a requested class
     $output->result = mutall::index($output);
